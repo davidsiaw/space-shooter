@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\app.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_render.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_cleanup.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_events.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_init.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app_loop.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\directoryresources.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphicfuncs.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\params.h" />
+    <ClInclude Include="..\src\app.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\controller.h">
+      <Filter>controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\directoryresources.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\graphicfuncs.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resourcecontainer.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\vertexbuffer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\scene.h">
+      <Filter>scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gamescene.h">
+      <Filter>scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{1a4477dc-88bb-416a-a605-6f5c5b3e3057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controller">
+      <UniqueIdentifier>{0d96b1c7-022f-4360-9a38-b567310b9d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{9d466b72-8281-4dbe-94cf-782493eb5fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{25f1538a-d0cd-4317-8085-89c35cac6797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scenes">
+      <UniqueIdentifier>{6b1e34dc-6363-491d-a940-d4edb890330e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
