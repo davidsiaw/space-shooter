@@ -42,34 +42,31 @@
     <ClInclude Include="..\src\vertexbuffer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libs\sources\Box2D_v2.2.1\Build\vs2010\Box2D.vcxproj">
+    <ProjectReference Include="..\box2d\Build\vs2010\Box2D.vcxproj">
       <Project>{98400d17-43a5-1a40-95be-c53ac78e7694}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\freetype-2.1.10\builds\win32\visualc\freetype.vcxproj">
+    <ProjectReference Include="..\freetype\builds\win32\visualc\freetype.vcxproj">
       <Project>{d0087beb-3e7b-4004-bd4a-e4d071cf8d92}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\glew-1.7.0\build\vc6\glew_static.vcxproj">
-      <Project>{a5633b76-6bd2-7748-7c61-990249c78787}</Project>
+    <ProjectReference Include="..\glew\build\vc6\glew_static.vcxproj">
+      <Project>{37a06363-2531-2d81-d46e-301d00361b26}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\libpng-1.5.5\projects\visualc71\libpng.vcxproj">
-      <Project>{867ac197-332e-be97-297d-2d5ee95add6d}</Project>
+    <ProjectReference Include="..\libpng\projects\visualc71\libpng.vcxproj">
+      <Project>{9b9244f1-258a-726b-789a-003bdcf26f9f}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\lua-5.2.0\lua.vcxproj">
-      <Project>{7cc1250b-0680-4bcc-aac8-92f5cf058816}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\SDL-1.2.14\VisualC\SDLmain\SDLmain.vcxproj">
+    <ProjectReference Include="..\sdl\VisualC\SDLmain\SDLmain.vcxproj">
       <Project>{da956fd3-e142-46f2-9dd5-c78bebb56b7a}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\SDL-1.2.14\VisualC\SDL\SDL.vcxproj">
+    <ProjectReference Include="..\sdl\VisualC\SDL\SDL.vcxproj">
       <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\SDL_image-1.2.10\VisualC\SDL_image.vcxproj">
+    <ProjectReference Include="..\sdl_image\VisualC\SDL_image.vcxproj">
       <Project>{2bd5534e-00e2-4bea-ac96-d9a92ea24696}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\SDL_ttf-2.0.10\VisualC\SDL_ttf.vcxproj">
+    <ProjectReference Include="..\sdl_ttf\VisualC\SDL_ttf.vcxproj">
       <Project>{dddbd07d-dc76-4af6-8d02-3e2deb6ee255}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\libs\sources\zlib-1.2.5\contrib\vstudio\vc10\zlibvc.vcxproj">
+    <ProjectReference Include="..\zlib\contrib\vstudio\vc10\zlibvc.vcxproj">
       <Project>{8fd826f8-3739-44e6-8cc8-997122e53b8d}</Project>
     </ProjectReference>
   </ItemGroup>
@@ -137,7 +134,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\gcc\libs\sources\SDL-1.2.14\include;D:\gcc\libs\sources\glew-1.7.0\include;D:\gcc\libs\sources\SDL_image-1.2.10;D:\gcc\libs\sources\boost_1_47_0;D:\gcc\libs\sources\lua-5.2.0\src;D:\gcc\libs\sources\SDL_ttf-2.0.10;D:\gcc\libs\sources\Box2D_v2.2.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\sdl\include;..\glew\include;..\sdl_image;..\boost;..\lua\src;..\sdl_ttf;..\box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,7 +150,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\gcc\libs\sources\SDL-1.2.14\include;D:\gcc\libs\sources\glew-1.7.0\include;D:\gcc\libs\sources\SDL_image-1.2.10;D:\gcc\libs\sources\boost_1_47_0;D:\gcc\libs\sources\lua-5.2.0\src;D:\gcc\libs\sources\SDL_ttf-2.0.10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\sdl\include;..\glew\include;..\sdl_image;..\boost;..\lua\src;..\sdl_ttf;..\box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -171,7 +168,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\gcc\libs\sources\SDL-1.2.14\include;D:\gcc\libs\sources\glew-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\sdl\include;..\glew\include;..\sdl_image;..\boost;..\lua\src;..\sdl_ttf;..\box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -190,7 +187,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\gcc\libs\sources\SDL-1.2.14\include;D:\gcc\libs\sources\glew-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\sdl\include;..\glew\include;..\sdl_image;..\boost;..\lua\src;..\sdl_ttf;..\box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

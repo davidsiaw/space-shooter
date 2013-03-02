@@ -1,0 +1,30 @@
+[submodule "sdl"]
+	path = sdl
+	url = git://github.com/davidsiaw/sdl.git
+[submodule "sdl_image"]
+	path = sdl_image
+	url = git://github.com/davidsiaw/sdl_image.git
+[submodule "sdl_ttf"]
+	path = sdl_ttf
+	url = https://github.com/davidsiaw/sdl_ttf.git
+[submodule "lua"]
+	path = lua
+	url = git://github.com/davidsiaw/lua.git
+[submodule "zlib"]
+	path = zlib
+	url = git://github.com/davidsiaw/zlib.git
+[submodule "libpng"]
+	path = libpng
+	url = git://github.com/davidsiaw/libpng.git
+[submodule "glew"]
+	path = glew
+	url = git://github.com/davidsiaw/glew.git
+[submodule "freetype"]
+	path = freetype
+	url = git://github.com/davidsiaw/freetype.git
+[submodule "box2d"]
+	path = box2d
+	url = git://github.com/davidsiaw/box2d.git
+[submodule "boost"]
+	path = boost
+	url = git://github.com/davidsiaw/boost.git
