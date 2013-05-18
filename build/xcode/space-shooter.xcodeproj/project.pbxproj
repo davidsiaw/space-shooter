@@ -21,7 +21,7 @@
 		534D2D021747A8110007CEA2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534D2D001747A8110007CEA2 /* MainStoryboard.storyboard */; };
 		534D2D041747A8110007CEA2 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 534D2D031747A8110007CEA2 /* Shader.fsh */; };
 		534D2D061747A8110007CEA2 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 534D2D051747A8110007CEA2 /* Shader.vsh */; };
-		534D2D091747A8110007CEA2 /* ssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 534D2D081747A8110007CEA2 /* ssViewController.m */; };
+		534D2D091747A8110007CEA2 /* ssViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 534D2D081747A8110007CEA2 /* ssViewController.mm */; };
 		534D2D111747A8110007CEA2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534D2D101747A8110007CEA2 /* SenTestingKit.framework */; };
 		534D2D121747A8110007CEA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534D2CE41747A8100007CEA2 /* UIKit.framework */; };
 		534D2D131747A8110007CEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534D2CE61747A8110007CEA2 /* Foundation.framework */; };
@@ -59,7 +59,7 @@
 		534D2D031747A8110007CEA2 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		534D2D051747A8110007CEA2 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		534D2D071747A8110007CEA2 /* ssViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ssViewController.h; sourceTree = "<group>"; };
-		534D2D081747A8110007CEA2 /* ssViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ssViewController.m; sourceTree = "<group>"; };
+		534D2D081747A8110007CEA2 /* ssViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ssViewController.mm; sourceTree = "<group>"; };
 		534D2D0F1747A8110007CEA2 /* space-shooterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "space-shooterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		534D2D101747A8110007CEA2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		534D2D181747A8110007CEA2 /* space-shooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "space-shooterTests-Info.plist"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				534D2D031747A8110007CEA2 /* Shader.fsh */,
 				534D2D051747A8110007CEA2 /* Shader.vsh */,
 				534D2D071747A8110007CEA2 /* ssViewController.h */,
-				534D2D081747A8110007CEA2 /* ssViewController.m */,
+				534D2D081747A8110007CEA2 /* ssViewController.mm */,
 				534D2CEF1747A8110007CEA2 /* Supporting Files */,
 			);
 			path = "space-shooter";
@@ -288,7 +288,7 @@
 			files = (
 				534D2CF51747A8110007CEA2 /* main.m in Sources */,
 				534D2CF91747A8110007CEA2 /* ssAppDelegate.m in Sources */,
-				534D2D091747A8110007CEA2 /* ssViewController.m in Sources */,
+				534D2D091747A8110007CEA2 /* ssViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +471,7 @@
 				534D2D231747A8110007CEA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534D2D241747A8110007CEA2 /* Build configuration list for PBXNativeTarget "space-shooterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +480,7 @@
 				534D2D261747A8110007CEA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
