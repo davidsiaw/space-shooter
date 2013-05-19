@@ -27,6 +27,7 @@
 		534D2D131747A8110007CEA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534D2CE61747A8110007CEA2 /* Foundation.framework */; };
 		534D2D1B1747A8110007CEA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 534D2D191747A8110007CEA2 /* InfoPlist.strings */; };
 		534D2D1E1747A8110007CEA2 /* space_shooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 534D2D1D1747A8110007CEA2 /* space_shooterTests.m */; };
+		53E847D8174893040057E96B /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E847D5174892F40057E96B /* libbox2d.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 534D2CE01747A8100007CEA2;
 			remoteInfo = "space-shooter";
+		};
+		53E847D4174892F40057E96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E847CF174892F40057E96B /* box2d.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 534D2BBC174728E20007CEA2;
+			remoteInfo = box2d;
+		};
+		53E847D6174892F40057E96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E847CF174892F40057E96B /* box2d.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 534D2BCD174728E20007CEA2;
+			remoteInfo = box2dTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,6 +81,7 @@
 		534D2D1A1747A8110007CEA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		534D2D1C1747A8110007CEA2 /* space_shooterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = space_shooterTests.h; sourceTree = "<group>"; };
 		534D2D1D1747A8110007CEA2 /* space_shooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = space_shooterTests.m; sourceTree = "<group>"; };
+		53E847CF174892F40057E96B /* box2d.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = box2d.xcodeproj; path = ../../box2d/Build/xcode_ios/box2d.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E847D8174893040057E96B /* libbox2d.a in Frameworks */,
 				534D2CE51747A8100007CEA2 /* UIKit.framework in Frameworks */,
 				534D2CE71747A8110007CEA2 /* Foundation.framework in Frameworks */,
 				534D2CE91747A8110007CEA2 /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +118,7 @@
 				534D2D161747A8110007CEA2 /* space-shooterTests */,
 				534D2CE31747A8100007CEA2 /* Frameworks */,
 				534D2CE21747A8100007CEA2 /* Products */,
+				53E847CF174892F40057E96B /* box2d.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +192,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		53E847D0174892F40057E96B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53E847D5174892F40057E96B /* libbox2d.a */,
+				53E847D7174892F40057E96B /* box2dTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +259,12 @@
 			mainGroup = 534D2CD81747A8100007CEA2;
 			productRefGroup = 534D2CE21747A8100007CEA2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 53E847D0174892F40057E96B /* Products */;
+					ProjectRef = 53E847CF174892F40057E96B /* box2d.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				534D2CE01747A8100007CEA2 /* space-shooter */,
@@ -239,6 +272,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		53E847D5174892F40057E96B /* libbox2d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbox2d.a;
+			remoteRef = 53E847D4174892F40057E96B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53E847D7174892F40057E96B /* box2dTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = box2dTests.octest;
+			remoteRef = 53E847D6174892F40057E96B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		534D2CDF1747A8100007CEA2 /* Resources */ = {
@@ -401,6 +451,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "space-shooter/space-shooter-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../box2d;
 				INFOPLIST_FILE = "space-shooter/space-shooter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -412,6 +463,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "space-shooter/space-shooter-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../box2d;
 				INFOPLIST_FILE = "space-shooter/space-shooter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
